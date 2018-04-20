@@ -1,0 +1,29 @@
+{{ form_start(form, {"attr": {"novalidate": "novalidate"}}) }}
+
+<div class="form-group">
+    {{ form_label(form.nome) }}
+    {{ form_widget(form.nome) }}
+    {{ form_errors(form.nome) }}
+</div>
+
+<div class="form-group">
+    {{ form_label(form.email) }}
+    {{ form_widget(form.email) }}
+    {{ form_errors(form.email) }}
+</div>
+
+<div class="form-group">
+    {{ form_label(form.nome_mae) }}
+    {{ form_widget(form.nome_mae) }}
+    {{ form_errors(form.nome_mae) }}
+</div>
+
+<div class="form-group">
+    {{ form_label(form.nome_pai) }}
+    {{ form_widget(form.nome_pai) }}
+    {{ form_errors(form.nome_pai) }}
+</div>
+
+{{ form_widget(form.status) }}
+
+{{ form_widget(form.enviar) }}

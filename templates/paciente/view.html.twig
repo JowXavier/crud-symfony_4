@@ -1,0 +1,34 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    Visualização de paciente -
+{% endblock %}
+
+{% block body %}
+    <h1>Visualização de paciente - <small>{{ paciente.nome }}</small></h1>
+    <hr>
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <th>Cod.</th>
+                <td>{{ paciente.id }}</td>
+            </tr>
+            <tr>
+                <th>Nome</th>
+                <td>{{ paciente.nome }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ paciente.email }}</td>
+            </tr>
+            <tr>
+                <th>Nome da Mãe</th>
+                <td>{{ paciente.nomeMae }}</td>
+            </tr>
+            <tr>
+                <th>Nome do Pai</th>
+                <td>{{ paciente.nomePai }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
